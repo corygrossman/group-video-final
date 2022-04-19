@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
 import styled from "styled-components";
-//import socket from "socket.io-client/lib/socket";
-
-const socket = io();
+import socket from "socket.io-client/lib/socket";
 
 //checks to see if the user is a teacher
 let isTeacher = false;
