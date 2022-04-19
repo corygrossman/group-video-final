@@ -24,7 +24,12 @@ const Class = () => {
         }
     }
 
-    const handleNavVideo = async () => {
+    const handleNavVideoTeacher = async () => {
+        navigate(`/video/${courseCode}isTeacher=true`);
+    }
+
+    
+    const handleNavVideoStudent = async () => {
         navigate(`/video/${courseCode}`);
     }
 
@@ -84,7 +89,7 @@ const Class = () => {
                         Create Course
                     </Button>
                     <br></br>
-                    <Button onClick={handleNavVideo}>
+                    <Button onClick={handleNavVideoTeacher}>
                         Launch Video
                     </Button>
 
@@ -94,6 +99,9 @@ const Class = () => {
                         <Button id="joinCourse" onClick={handleAddClass}>
                             Join Course
                         </Button>
+                        <Button onClick={handleNavVideoStudent}>
+                        Join Video
+                    </Button>
                     </div>) : null}
         </>
     )
