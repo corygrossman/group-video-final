@@ -25,7 +25,7 @@ const Class = () => {
     }
 
     const handleNavVideoTeacher = async () => {
-        navigate(`/video/${courseCode}isTeacher=true`);
+        navigate(`/video/${courseCode}?isTeacher=true`);
     }
 
     
